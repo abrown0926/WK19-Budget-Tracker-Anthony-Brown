@@ -16,7 +16,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="manifest" href="manifest.webmanifest" />
     <title>Budget Tracker</title>
   </head>
   <body>
@@ -53,16 +53,7 @@
       <canvas id="myChart"></canvas>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script>
-      // We request a database instance.
-      const request = indexedDB.open("firstDatabase", 1);
-
-      // This returns a result that we can then manipulate.
-      request.onsuccess = (event) => {
-        console.log(request.result);
-      };
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>    
     <script src="index.js"></script>
   </body>
 </html>
